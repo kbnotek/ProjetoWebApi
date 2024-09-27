@@ -2,7 +2,7 @@
 
 namespace ProjetoWebApi.Repositorio
 {
-    public interface FuncionarioRepositorio
+    public interface IFuncionarioRepositorio
     {
         void Add(Funcionario funcionario);
 

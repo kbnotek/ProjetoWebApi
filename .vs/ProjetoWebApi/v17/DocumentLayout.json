@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Aluno Noite\\source\\repos\\ProjetoWebApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0CF64B99-6C8E-479D-9CAE-DEC81EE71B7A}|ProjetoWebApi\\ProjetoWebApi.csproj|c:\\users\\aluno noite\\source\\repos\\projetowebapi\\projetowebapi\\controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF64B99-6C8E-479D-9CAE-DEC81EE71B7A}|ProjetoWebApi\\ProjetoWebApi.csproj|solutionrelative:projetowebapi\\controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF64B99-6C8E-479D-9CAE-DEC81EE71B7A}|ProjetoWebApi\\ProjetoWebApi.csproj|c:\\users\\aluno noite\\source\\repos\\projetowebapi\\projetowebapi\\repositorio\\funcionariorepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF64B99-6C8E-479D-9CAE-DEC81EE71B7A}|ProjetoWebApi\\ProjetoWebApi.csproj|solutionrelative:projetowebapi\\repositorio\\funcionariorepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF64B99-6C8E-479D-9CAE-DEC81EE71B7A}|ProjetoWebApi\\ProjetoWebApi.csproj|c:\\users\\aluno noite\\source\\repos\\projetowebapi\\projetowebapi\\repositorio\\ifuncionariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF64B99-6C8E-479D-9CAE-DEC81EE71B7A}|ProjetoWebApi\\ProjetoWebApi.csproj|solutionrelative:projetowebapi\\repositorio\\ifuncionariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0CF64B99-6C8E-479D-9CAE-DEC81EE71B7A}|ProjetoWebApi\\ProjetoWebApi.csproj|c:\\users\\aluno noite\\source\\repos\\projetowebapi\\projetowebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0CF64B99-6C8E-479D-9CAE-DEC81EE71B7A}|ProjetoWebApi\\ProjetoWebApi.csproj|solutionrelative:projetowebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CF64B99-6C8E-479D-9CAE-DEC81EE71B7A}|ProjetoWebApi\\ProjetoWebApi.csproj|c:\\users\\aluno noite\\source\\repos\\projetowebapi\\projetowebapi\\controller\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CF64B99-6C8E-479D-9CAE-DEC81EE71B7A}|ProjetoWebApi\\ProjetoWebApi.csproj|solutionrelative:projetowebapi\\controller\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0CF64B99-6C8E-479D-9CAE-DEC81EE71B7A}|ProjetoWebApi\\ProjetoWebApi.csproj|c:\\users\\aluno noite\\source\\repos\\projetowebapi\\projetowebapi\\model\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF64B99-6C8E-479D-9CAE-DEC81EE71B7A}|ProjetoWebApi\\ProjetoWebApi.csproj|solutionrelative:projetowebapi\\model\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +30,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "Funcionario.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\source\\repos\\ProjetoWebApi\\ProjetoWebApi\\Model\\Funcionario.cs",
+              "RelativeDocumentMoniker": "ProjetoWebApi\\Model\\Funcionario.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\source\\repos\\ProjetoWebApi\\ProjetoWebApi\\Model\\Funcionario.cs",
+              "RelativeToolTip": "ProjetoWebApi\\Model\\Funcionario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T13:54:00.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IFuncionarioRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\source\\repos\\ProjetoWebApi\\ProjetoWebApi\\Repositorio\\IFuncionarioRepositorio.cs",
+              "RelativeDocumentMoniker": "ProjetoWebApi\\Repositorio\\IFuncionarioRepositorio.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\source\\repos\\ProjetoWebApi\\ProjetoWebApi\\Repositorio\\IFuncionarioRepositorio.cs",
+              "RelativeToolTip": "ProjetoWebApi\\Repositorio\\IFuncionarioRepositorio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T12:34:55.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FuncionarioRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\source\\repos\\ProjetoWebApi\\ProjetoWebApi\\Repositorio\\FuncionarioRepo.cs",
+              "RelativeDocumentMoniker": "ProjetoWebApi\\Repositorio\\FuncionarioRepo.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\source\\repos\\ProjetoWebApi\\ProjetoWebApi\\Repositorio\\FuncionarioRepo.cs",
+              "RelativeToolTip": "ProjetoWebApi\\Repositorio\\FuncionarioRepo.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T11:38:37.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\source\\repos\\ProjetoWebApi\\ProjetoWebApi\\Program.cs",
               "RelativeDocumentMoniker": "ProjetoWebApi\\Program.cs",
               "ToolTip": "C:\\Users\\Aluno Noite\\source\\repos\\ProjetoWebApi\\ProjetoWebApi\\Program.cs",
               "RelativeToolTip": "ProjetoWebApi\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAhAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T14:22:18.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T14:22:18.159Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FuncionarioController.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno Noite\\source\\repos\\ProjetoWebApi\\ProjetoWebApi\\Controller\\FuncionarioController.cs",
-              "RelativeDocumentMoniker": "ProjetoWebApi\\Controller\\FuncionarioController.cs",
-              "ToolTip": "C:\\Users\\Aluno Noite\\source\\repos\\ProjetoWebApi\\ProjetoWebApi\\Controller\\FuncionarioController.cs",
-              "RelativeToolTip": "ProjetoWebApi\\Controller\\FuncionarioController.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowCEAAAAAAAAA",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\source\\repos\\ProjetoWebApi\\ProjetoWebApi\\Controllers\\FuncionarioController.cs",
+              "RelativeDocumentMoniker": "ProjetoWebApi\\Controllers\\FuncionarioController.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\source\\repos\\ProjetoWebApi\\ProjetoWebApi\\Controllers\\FuncionarioController.cs",
+              "RelativeToolTip": "ProjetoWebApi\\Controllers\\FuncionarioController.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAkwEcAAACEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T14:08:13.113Z"
+              "WhenOpened": "2024-09-25T14:08:13.113Z",
+              "EditorCaption": ""
             }
           ]
         }

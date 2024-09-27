@@ -1,8 +1,10 @@
-﻿namespace ProjetoWebApi.Model
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ProjetoWebApi.Model
 {
     public class Funcionario
     {
-
+        
         public int Id { get; set; }
 
         public string Name { get; set; } = null!;
