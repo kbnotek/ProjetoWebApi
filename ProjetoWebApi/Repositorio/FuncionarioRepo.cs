@@ -16,19 +16,34 @@ namespace ProjetoWebApi.Repositorio
             _context = context;
         }
 
-        //Adicionar no Banco de dados [ Nome e Idade ]
-        public void Add(Funcionario funcionario)
+        //Adicionar no Banco de dados [ Nome, Idade e Foto ]
+        public void Add(Funcionario funcionario, IFormFile foto)
         {
+            // Verifica se uma foto foi enviada
+            byte[] fotoBytes = null;
+            if (foto != null && foto.Length > 0)
+            {
+                using (var memoryStream = new MemoryStream())
+                {
+                    foto.CopyTo(memoryStream);
+                    fotoBytes = memoryStream.ToArray();
+                }
+            }
+
+            // Cria uma nova entidade do tipo TbFuncionario a partir do objeto Funcionario recebido
             var tbFuncionario = new TbFuncionario()
             {
                 Name = funcionario.Name,
-                Idade = funcionario.Idade
-
+                Idade = funcionario.Idade,
+                Foto = fotoBytes // Armazena a foto na entidade
             };
-            _context.TbFuncionarios.Add(tbFuncionario);           
+
+            // Adiciona a entidade ao contexto
+            _context.TbFuncionarios.Add(tbFuncionario);
+
+            // Salva as mudanças no banco de dados
             _context.SaveChanges();
-        }      
-        // Listando Todos [Id Nome e Idade  Foto]
+        }        // Listando Todos [Id Nome e Idade  Foto]
         public List<Funcionario> GetAll()
         {
             List<Funcionario> listFun = new List<Funcionario>();

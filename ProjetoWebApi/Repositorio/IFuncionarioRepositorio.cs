@@ -5,7 +5,7 @@ namespace ProjetoWebApi.Repositorio
     //Interface Funcionario
     public interface IFuncionarioRepositorio
     {
-        void Add(Funcionario funcionario);
+        void Add(Funcionario funcionario, IFormFile foto);
 
         List<Funcionario> GetAll();
 

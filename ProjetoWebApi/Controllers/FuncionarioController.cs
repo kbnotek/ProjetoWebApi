@@ -42,21 +42,29 @@ namespace ProjetoWebApi.Controllers
 
         // POST Publicando ou Adicionando um Cadastro do Funcionario api/<FuncionarioController>     
         [HttpPost]
-        public ActionResult<Funcionario> Post(Funcionario funcionario)
+        public ActionResult<object> Post([FromForm] FuncionarioDto novoFuncionario)
         {
-            _funcionarioRepo.Add(funcionario);
+            // Cria uma nova instância do modelo Funcionario a partir do DTO recebido
+            var funcionario = new Funcionario
+            {
+                Name = novoFuncionario.Name,
+                Idade = novoFuncionario.Idade
+            };
+
+            // Chama o método de adicionar do repositório, passando a foto como parâmetro
+            _funcionarioRepo.Add(funcionario, novoFuncionario.Foto);
+
+            // Cria um objeto anônimo para retornar
             var resultado = new
             {
-                Mensagem = "Usuário Cadastrado com Sucesso !",
-                  Nome = funcionario.Name,
-                  Idade = funcionario.Idade
+              
+                Nome = funcionario.Name,
+                Idade = funcionario.Idade,                
+                Mensagem = "Usuário cadastrado com sucesso!"
             };
-            // Adiciona o funcionário ao repositório
-            
 
-            // Retorna 201 Created com o funcionário criado e a URL de acesso ao recurso
+            // Retorna o objeto com status 200 OK
             return Ok(resultado);
-           
         }
 
         // PUT Alterando os dados [Nome e Idade ] Pelo Id api/<FuncionarioController>/5
