@@ -6,10 +6,8 @@ namespace ProjetoWebApi.Repositorio
 
 {
    
-
+    //Importação de HERANÇA de Interface para a Classe [FuncionarioRepo] ! 
     public class FuncionarioRepo : IFuncionarioRepositorio
-
-
     {
         private BdEmpresaContext _context;
 
@@ -18,6 +16,7 @@ namespace ProjetoWebApi.Repositorio
             _context = context;
         }
 
+        //Adicionar no Banco de dados [ Nome e Idade ]
         public void Add(Funcionario funcionario)
         {
             var tbFuncionario = new TbFuncionario()
@@ -28,15 +27,8 @@ namespace ProjetoWebApi.Repositorio
             };
             _context.TbFuncionarios.Add(tbFuncionario);           
             _context.SaveChanges();
-
-
-        }
-
-       public void Delete(Funcionario funcionario)
-        {
-            throw new NotImplementedException();
-        }
-
+        }      
+        // Listando Todos [Id Nome e Idade  Foto]
         public List<Funcionario> GetAll()
         {
             List<Funcionario> listFun = new List<Funcionario>();
@@ -56,6 +48,7 @@ namespace ProjetoWebApi.Repositorio
 
             return listFun;
         }
+        //Buscando Funcionario Pelo [Id]
         public Funcionario GetById(int id)
         {
             // Busca o funcionário no banco de dados com base no ID
@@ -77,24 +70,49 @@ namespace ProjetoWebApi.Repositorio
 
             return funcionario; // Retorna o objeto Funcionario encontrado
         }
-
+        //Alterar por Id  [ Nome e Idade ]
         public void Update(Funcionario funcionario)
         {
-            // Busca o funcionário no banco de dados
-            var tbFuncionario = _context.TbFuncionarios.Find(funcionario.Id);
+            // Busca a entidade existente no banco de dados pelo Id
+            var tbFuncionario = _context.TbFuncionarios.FirstOrDefault(f => f.Id == funcionario.Id);
 
-            if (tbFuncionario == null)
+            // Verifica se a entidade foi encontrada
+            if (tbFuncionario != null)
             {
-                throw new InvalidOperationException("Funcionário não encontrado.");
+                // Atualiza os campos da entidade com os valores do objeto Funcionario recebido
+                tbFuncionario.Name = funcionario.Name;
+                tbFuncionario.Idade = funcionario.Idade;
+
+                // Atualiza as informações no contexto
+                _context.TbFuncionarios.Update(tbFuncionario);
+
+                // Salva as mudanças no banco de dados
+                _context.SaveChanges();
             }
+            else
+            {
+                throw new Exception("Funcionário não encontrado.");
+            }
+        }
+        //Deletando por Id
+        public void Delete(int id)
+        {
+            // Busca a entidade existente no banco de dados pelo Id
+            var tbFuncionario = _context.TbFuncionarios.FirstOrDefault(f => f.Id == id);
 
-            // Atualiza as propriedades do funcionário
-            tbFuncionario.Name = funcionario.Name;
-            tbFuncionario.Idade = funcionario.Idade;
-            tbFuncionario.Foto = funcionario.Foto; // Adicione a propriedade foto se necessário
+            // Verifica se a entidade foi encontrada
+            if (tbFuncionario != null)
+            {
+                // Remove a entidade do contexto
+                _context.TbFuncionarios.Remove(tbFuncionario);
 
-            // Salva as alterações no banco de dados
-            _context.SaveChanges();
+                // Salva as mudanças no banco de dados
+                _context.SaveChanges();
+            }
+            else
+            {
+                throw new Exception("Funcionário não encontrado.");
+            }
         }
     }
            

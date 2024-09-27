@@ -2,6 +2,7 @@
 
 namespace ProjetoWebApi.Model
 {
+    //Classe Funcionario Model
     public class Funcionario
     {
         

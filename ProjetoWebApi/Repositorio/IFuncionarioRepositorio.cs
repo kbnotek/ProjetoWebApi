@@ -2,6 +2,7 @@
 
 namespace ProjetoWebApi.Repositorio
 {
+    //Interface Funcionario
     public interface IFuncionarioRepositorio
     {
         void Add(Funcionario funcionario);
@@ -10,7 +11,7 @@ namespace ProjetoWebApi.Repositorio
 
         void Update(Funcionario funcionario);
 
-        void Delete(Funcionario funcionario);
+        void Delete(int id);
 
     }
 }
